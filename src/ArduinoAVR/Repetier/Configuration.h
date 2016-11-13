@@ -107,7 +107,7 @@ We can connect BlueTooth to serial converter module directly to boards based on 
   Comment out or set the BLUETOOTH_SERIAL to 0 or -1 to disable this feature.
 */
 #define BLUETOOTH_SERIAL   1                      // Port number (1..3) - For RUMBA use 3
-#define BLUETOOTH_BAUD     115200                 // communication speed
+#define BLUETOOTH_BAUD     250000                 // communication speed115200
 
 // Uncomment the following line if you are using Arduino compatible firmware made for Arduino version earlier then 1.0
 // If it is incompatible you will get compiler errors about write functions not being compatible!
