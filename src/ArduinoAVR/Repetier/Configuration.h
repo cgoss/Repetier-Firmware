@@ -127,7 +127,7 @@ is a full cartesian system where x, y and z moves are handled by separate motors
 Cases 1, 2, 8 and 9 cover all needed xy and xz H gantry systems. If you get results mirrored etc. you can swap motor connections for x and y.
 If a motor turns in the wrong direction change INVERT_X_DIR or INVERT_Y_DIR.
 */
-#define DRIVE_SYSTEM 0
+#define DRIVE_SYSTEM 3
 
 /* You can write some GCODE to be executed on startup. Use this e.g. to set some
 pins. Separate multiple GCODEs with \n
@@ -234,7 +234,7 @@ controlled by settings in extruder 0 definition. */
 #define EXT0_Y_OFFSET 0
 #define EXT0_Z_OFFSET 0
 // for skeinforge 40 and later, steps to pull the plastic 1 mm inside the extruder, not out.  Overridden if EEPROM activated.
-#define EXT0_STEPS_PER_MM 413 //385
+#define EXT0_STEPS_PER_MM 92.5 //385
 // What type of sensor is used?
 // 0 is no thermistor/temperature control
 // 1 is 100k thermistor (Epcos B57560G0107F000 - RepRap-Fab.org and many other)
@@ -259,7 +259,7 @@ controlled by settings in extruder 0 definition. */
 // 100 is AD595
 // 101 is MAX6675
 // 102 is MAX31855
-#define EXT0_TEMPSENSOR_TYPE 1
+#define EXT0_TEMPSENSOR_TYPE 52
 // Analog input pin for reading temperatures or pin enabling SS for MAX6675
 #define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
 // Which pin enables the heater
@@ -367,7 +367,7 @@ The codes are only executed for multiple extruder when changing the extruder. */
 #define EXT1_Y_OFFSET 0
 #define EXT1_Z_OFFSET 0
 // for skeinforge 40 and later, steps to pull the plastic 1 mm inside the extruder, not out.  Overridden if EEPROM activated.
-#define EXT1_STEPS_PER_MM 373
+#define EXT1_STEPS_PER_MM 92.5
 // What type of sensor is used?
 // 0 is no thermistor/temperature control
 // 1 is 100k thermistor (Epcos B57560G0107F000 - RepRap-Fab.org and many other)
@@ -388,7 +388,7 @@ The codes are only executed for multiple extruder when changing the extruder. */
 // 99 Generic thermistor table 3
 // 100 is AD595
 // 101 is MAX6675
-#define EXT1_TEMPSENSOR_TYPE 3
+#define EXT1_TEMPSENSOR_TYPE 52
 // Analog input pin for reading temperatures or pin enabling SS for MAX6675
 #define EXT1_TEMPSENSOR_PIN TEMP_1_PIN
 // Which pin enables the heater
@@ -402,8 +402,8 @@ The codes are only executed for multiple extruder when changing the extruder. */
 #define EXT1_ENABLE_ON false
 /* Set to 1 to mirror motor. Pins for mirrored motor are below */
 #define EXT1_MIRROR_STEPPER 0
-#define EXT1_STEP2_PIN E0_STEP_PIN
-#define EXT1_DIR2_PIN E0_DIR_PIN
+#define EXT1_STEP2_PIN E1_STEP_PIN
+#define EXT1_DIR2_PIN E1_DIR_PIN
 #define EXT1_INVERSE2 false
 #define EXT1_ENABLE2_PIN E0_ENABLE_PIN
 // The following speed settings are for skeinforge 40+ where e is the
