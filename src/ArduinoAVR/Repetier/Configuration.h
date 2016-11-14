@@ -41,6 +41,11 @@
 #include "pins.h"
 
 // ################## EDIT THESE SETTINGS MANUALLY ################
+//  Microstepping mod eof your RAMO board
+#define MICROSTEP_MODES { 8,8,8,8,8 } // [1,2,4,8,16]
+// Motor Current setting (Only functional when motor driver current ref pins are connected to a digital trimpot on supported boards)
+#define MOTOR_CURRENT_PERCENT { 55,55,55,55,55 }
+
 // ################ END MANUAL SETTINGS ##########################
 
 #undef FAN_BOARD_PIN
@@ -724,7 +729,7 @@ Values must be in range 1..255
     "xMaxEndstop": 1,
     "yMaxEndstop": 1,
     "zMaxEndstop": 1,
-    "motherboard": 33,
+    "motherboard": 301,
     "driveSystem": 3,
     "xMaxSpeed": 200,
     "xHomingSpeed": 40,
