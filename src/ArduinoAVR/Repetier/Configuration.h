@@ -80,12 +80,12 @@
 #define RETRACT_ON_PAUSE 2
 #define PAUSE_START_COMMANDS ""
 #define PAUSE_END_COMMANDS ""
-#define SHARED_EXTRUDER_HEATER 0
+#define SHARED_EXTRUDER_HEATER 1
 #define EXT0_X_OFFSET 0
 #define EXT0_Y_OFFSET 0
 #define EXT0_Z_OFFSET 0
 #define EXT0_STEPS_PER_MM 92.4
-#define EXT0_TEMPSENSOR_TYPE 1
+#define EXT0_TEMPSENSOR_TYPE 52
 #define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
 #define EXT0_HEATER_PIN HEATER_0_PIN
 #define EXT0_STEP_PIN ORIG_E0_STEP_PIN
@@ -167,7 +167,7 @@
 #define RETRACTION_LENGTH 3
 #define RETRACTION_LONG_LENGTH 13
 #define RETRACTION_SPEED 40
-#define RETRACTION_Z_LIFT 0
+#define RETRACTION_Z_LIFT 1
 #define RETRACTION_UNDO_EXTRA_LENGTH 0
 #define RETRACTION_UNDO_EXTRA_LONG_LENGTH 0
 #define RETRACTION_UNDO_SPEED 20
@@ -321,7 +321,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DISABLE_E 0
 #define INVERT_X_DIR 0
 #define INVERT_Y_DIR 0
-#define INVERT_Z_DIR 0
+#define INVERT_Z_DIR 1
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR 1
@@ -449,7 +449,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ACK_WITH_LINENUMBER 1
 #define WAITING_IDENTIFIER "wait"
 #define ECHO_ON_EXECUTE 1
-#define EEPROM_MODE 1
+#define EEPROM_MODE 0
 #undef PS_ON_PIN
 #define PS_ON_PIN ORIG_PS_ON_PIN
 #define JSON_OUTPUT 0
@@ -608,10 +608,10 @@ Values must be in range 1..255
     "zStepsPerMM": 80,
     "xInvert": 0,
     "xInvertEnable": 0,
-    "eepromMode": 1,
+    "eepromMode": 0,
     "yInvert": 0,
     "yInvertEnable": 0,
-    "zInvert": 0,
+    "zInvert": "1",
     "zInvertEnable": 0,
     "extruder": [
         {
@@ -1039,7 +1039,7 @@ Values must be in range 1..255
     "retractionLength": 3,
     "retractionLongLength": 13,
     "retractionSpeed": 40,
-    "retractionZLift": 0,
+    "retractionZLift": 1,
     "retractionUndoExtraLength": 0,
     "retractionUndoExtraLongLength": 0,
     "retractionUndoSpeed": 20,
@@ -1186,7 +1186,7 @@ Values must be in range 1..255
     "zProbeRequiresHeating": "0",
     "zProbeMinTemperature": 150,
     "adcKeypadPin": -1,
-    "sharedExtruderHeater": "0",
+    "sharedExtruderHeater": "1",
     "extruderSwitchXYSpeed": 100,
     "dualXAxis": "0",
     "boardFanSpeed": 255,
