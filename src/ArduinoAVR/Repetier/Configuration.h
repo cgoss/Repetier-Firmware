@@ -37,7 +37,7 @@
 */
 
 #define NUM_EXTRUDER 2
-#define MOTHERBOARD 33
+#define MOTHERBOARD 301
 #include "pins.h"
 
 // ################## EDIT THESE SETTINGS MANUALLY ################
